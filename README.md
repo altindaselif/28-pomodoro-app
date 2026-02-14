@@ -8,8 +8,8 @@ The goal was to build a productivity tool that allows users to manage their focu
 
 ## 🔗 Links
 
-- **Live Site:** [View Live Demo](https://www.google.com/search?q=https://altindaselif.github.io/pomodoro-app-main/)
-- **Code:** [View GitHub Repository](https://www.google.com/search?q=https://github.com/altindaselif/pomodoro-app-main)
+- **Live Site:** [View Live Demo](https://altindaselif.github.io/28-pomodoro-app/)
+- **Code:** [View GitHub Repository](https://github.com/altindaselif/28-pomodoro-app)
 
 ## 💡 Key Features
 
@@ -41,9 +41,9 @@ Custom UI elements, such as the increment/decrement arrows in the settings modal
 
 ## 📸 Screenshots
 
-- [View Desktop Version](https://www.google.com/search?q=./desktop-screenshot.png)
-- [View Tablet Version](https://www.google.com/search?q=./tablet-screenshot.png)
-- [View Mobile Version](https://www.google.com/search?q=./mobile-screenshot.png)
+- [View Desktop Version](./desktop-screenshot.png)
+- [View Tablet Version](./tablet-screenshot.png)
+- [View Mobile Version](./mobile-screenshot.png)
 
 ## 🧰 Built With
 
