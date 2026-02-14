@@ -21,9 +21,9 @@
     <header class="header-container">
       <a class="header-logo-link" href="#"><img class="header-logo-img" src="images/logo.svg" alt="Website Logo" /></a>
       <div class="modes-container">
-        <button id="pomodoro" class="mode-button active">pomodoro</button>
-        <button id="short-break" class="mode-button">short break</button>
-        <button id="long-break" class="mode-button">long break</button>
+        <button id="pomodoro" class="mode-button active" type="button" aria-pressed="true">pomodoro</button>
+        <button id="short-break" class="mode-button" type="button" aria-pressed="false">short break</button>
+        <button id="long-break" class="mode-button" type="button" aria-pressed="false">long break</button>
       </div>
     </header>
     <main class="main-container">
@@ -34,10 +34,10 @@
         </svg>
         <div class="timer-info-container">
           <h1 class="timer-display">00:00</h1>
-          <button class="timer-button">start</button>
+          <button class="timer-button" type="button">start</button>
         </div>
       </div>
-      <button class="settings-button" aria-label="Settings">
+      <button class="settings-button" type="button" aria-label="Settings">
         <svg class="settings-button-img" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
           <path
             class="settings-button-img-path"
@@ -51,7 +51,7 @@
       <div class="modal-container">
         <div class="modal-header-container">
           <h2 class="modal-header">Settings</h2>
-          <button class="modal-close-button" aria-label="Close Modal">
+          <button class="modal-close-button" type="button" aria-label="Close Modal">
             <svg class="modal-close-img" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
               <path
                 class="modal-close-img-path"
@@ -80,12 +80,12 @@
                       value="25"
                     />
                     <div class="arrows-container">
-                      <button class="arrow-button arrow-up-button">
+                      <button class="arrow-button arrow-up-button" type="button" aria-label="Increase pomodoro time">
                         <svg class="arrow-img" xmlns="http://www.w3.org/2000/svg" width="14" height="7">
                           <path class="arrow-img-path" fill="none" stroke-width="2" d="M1 6l6-4 6 4" />
                         </svg>
                       </button>
-                      <button class="arrow-button arrow-down-button">
+                      <button class="arrow-button arrow-down-button" type="button" aria-label="Decrease pomodoro time">
                         <svg class="arrow-img" xmlns="http://www.w3.org/2000/svg" width="14" height="7">
                           <path class="arrow-img-path" fill="none" stroke-width="2" d="M1 1l6 4 6-4" />
                         </svg>
@@ -106,12 +106,16 @@
                       value="5"
                     />
                     <div class="arrows-container">
-                      <button class="arrow-button arrow-up-button">
+                      <button class="arrow-button arrow-up-button" type="button" aria-label="Increase short break time">
                         <svg class="arrow-img" xmlns="http://www.w3.org/2000/svg" width="14" height="7">
                           <path class="arrow-img-path" fill="none" stroke-width="2" d="M1 6l6-4 6 4" />
                         </svg>
                       </button>
-                      <button class="arrow-button arrow-down-button">
+                      <button
+                        class="arrow-button arrow-down-button"
+                        type="button"
+                        aria-label="Decrease short break time"
+                      >
                         <svg class="arrow-img" xmlns="http://www.w3.org/2000/svg" width="14" height="7">
                           <path class="arrow-img-path" fill="none" stroke-width="2" d="M1 1l6 4 6-4" />
                         </svg>
@@ -132,12 +136,16 @@
                       value="15"
                     />
                     <div class="arrows-container">
-                      <button class="arrow-button arrow-up-button">
+                      <button class="arrow-button arrow-up-button" type="button" aria-label="Increase long break time">
                         <svg class="arrow-img" xmlns="http://www.w3.org/2000/svg" width="14" height="7">
                           <path class="arrow-img-path" fill="none" stroke-width="2" d="M1 6l6-4 6 4" />
                         </svg>
                       </button>
-                      <button class="arrow-button arrow-down-button">
+                      <button
+                        class="arrow-button arrow-down-button"
+                        type="button"
+                        aria-label="Decrease long break time"
+                      >
                         <svg class="arrow-img" xmlns="http://www.w3.org/2000/svg" width="14" height="7">
                           <path class="arrow-img-path" fill="none" stroke-width="2" d="M1 1l6 4 6-4" />
                         </svg>

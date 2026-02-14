@@ -225,6 +225,11 @@ body {
   gap: 3.6rem;
 }
 
+:focus-visible {
+  outline: 0.3rem solid var(--main-color);
+  outline-offset: 0.3rem;
+}
+
 /* --- HEADER PART --- */
 .header-container {
   display: flex;

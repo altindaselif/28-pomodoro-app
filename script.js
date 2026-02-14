@@ -27,7 +27,7 @@ const defaultSettings = {
   color: "red",
 };
 
-let currentSettings = { ...defaultSettings };
+const currentSettings = { ...defaultSettings };
 
 let timerState = {
   totalTime: currentSettings.pomodoro * 60,
@@ -89,7 +89,10 @@ const switchMode = (mode) => {
   updateDisplay();
 
   modeButtons.forEach((button) => {
+    const isActive = button.id === mode;
+
     button.classList.toggle("active", button.id === mode);
+    button.setAttribute("aria-pressed", isActive);
   });
 };
 
