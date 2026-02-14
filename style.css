@@ -1,0 +1,705 @@
+:root {
+  /* Colors */
+  --white: #fff;
+  --black: #000;
+  --blue-950: #14172e;
+  --blue-900: #161932;
+  --blue-850: #1e213f;
+  --blue-100: #d7e0ff;
+  --blue-50: #eff1fa;
+  --grey-400: #bbbdcb;
+  --grey-200: #e4e2e2;
+  --cyan-300: #70f3f8;
+  --red-400: #f87070;
+  --purple-400: #d881f8;
+  --gradient-1: #2e325a;
+  --gradient-2: #0e112a;
+
+  --red-theme: var(--red-400);
+  --cyan-theme: var(--cyan-300);
+  --purple-theme: var(--purple-400);
+
+  /* Typography - Font Family */
+  --font-kumbh: "Kumbh Sans", sans-serif;
+  --font-roboto: "Roboto Slab", sans-serif;
+  --font-space: "Space Mono", sans-serif;
+
+  /* Text Presets */
+  /* Weight Size/Line-Height Family */
+  /* KUMBH SANS */
+  /* Desktop */
+  --kumbh-display: 700 10rem/1.25 var(--font-kumbh);
+  --kumbh-display-ls: -0.5rem;
+
+  --kumbh-h1: 700 1.6rem/1.25 var(--font-kumbh);
+  --kumbh-h1-ls: 1.5rem;
+
+  --kumbh-h2: 700 1.4rem/1.2 var(--font-kumbh);
+
+  /* Mobile */
+  --kumbh-display-m: 700 8rem/1.25 var(--font-kumbh);
+  --kumbh-display-m-ls: -0.5rem;
+
+  --kumbh-h1-m: 700 1.4rem/1.2 var(--font-kumbh);
+  --kumbh-h1-m-ls: 1.3rem;
+
+  --kumbh-h2-m: 700 1.2rem/1.25 var(--font-kumbh);
+
+  /* ROBOTO SLAB */
+  /* Desktop */
+  --roboto-display: 700 10rem/1.3 var(--font-roboto);
+  --roboto-display-ls: 0;
+
+  --roboto-h1: 700 1.6rem/1.25 var(--font-roboto);
+  --roboto-h1-ls: 1.5rem;
+
+  --roboto-h2: 700 1.4rem/1.3 var(--font-roboto);
+
+  /* Mobile */
+  --roboto-display-m: 700 8rem/1.33 var(--font-roboto);
+  --roboto-display-m-ls: 0;
+
+  --roboto-h1-m: 700 1.4rem/1.3 var(--font-roboto);
+  --roboto-h1-m-ls: 1.3rem;
+
+  --roboto-h2-m: 700 1.2rem/1.33 var(--font-roboto);
+
+  /* SPACE MONO */
+  /* Desktop */
+  --space-display: 400 10rem/1.5 var(--font-space);
+  --space-display-ls: -1rem;
+
+  --space-h1: 700 1.6rem/1.5 var(--font-space);
+  --space-h1-ls: 1.5rem;
+
+  --space-h2: 700 1.3rem/1.45 var(--font-space);
+
+  /* Mobile */
+  --space-display-m: 400 8rem/1.2 var(--font-space);
+  --space-display-m-ls: -1rem;
+
+  --space-h1-m: 700 1.4rem/1.5 var(--font-space);
+  --space-h1-m-ls: 1.3rem;
+
+  --space-h2-m: 700 1.2rem/1.5 var(--font-space);
+
+  /* Settings */
+  --settings-header: 700 2.8rem/1.25 var(--font-kumbh);
+
+  --settings-subhead: 700 1.3rem/1.25 var(--font-kumbh);
+  --settings-subhead-ls: 0.5rem;
+
+  --settings-aa-kumbh: 700 1.3rem/1.45 var(--font-kumbh);
+  --settings-aa-roboto: 400 1.6rem/1.25 var(--font-roboto);
+  --settings-aa-space: 700 1.6rem/1.25 var(--font-space);
+
+  --settings-input: 700 1.3rem/1.25 var(--font-kumbh);
+  --settings-label: 700 1.2rem/1.25 var(--font-kumbh);
+  --settings-btn: 700 1.3rem/1.45 var(--font-kumbh);
+
+  /* Spacing */
+  --spacing-1000: 8rem;
+  --spacing-800: 6.4rem;
+  --spacing-700: 5.6rem;
+  --spacing-600: 4.8rem;
+  --spacing-500: 4rem;
+  --spacing-450: 3.6rem;
+  --spacing-400: 3.2rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+  --spacing-100: 0.8rem;
+
+  /* THEMES */
+  body {
+    --main-color: var(--red-400);
+
+    /* Fonts (Desktop) */
+    --font-display: var(--kumbh-display);
+    --ls-display: var(--kumbh-display-ls);
+
+    --font-h1: var(--kumbh-h1);
+    --ls-h1: var(--kumbh-h1-ls);
+
+    --font-h2: var(--kumbh-h2);
+    --font-body: var(--kumbh-h2);
+
+    /* Fonts (Mobile) */
+    --font-display-mobile: var(--kumbh-display-m);
+    --ls-display-mobile: var(--kumbh-display-m-ls);
+
+    --font-h1-mobile: var(--kumbh-h1-m);
+    --ls-h1-mobile: var(--kumbh-h1-m-ls);
+
+    --font-h2-mobile: var(--kumbh-h2-m);
+  }
+
+  /* --- FONT THEMES --- */
+  body.font-roboto {
+    --font-display: var(--roboto-display);
+    --ls-display: var(--roboto-display-ls);
+
+    --font-h1: var(--roboto-h1);
+    --ls-h1: var(--roboto-h1-ls);
+
+    --font-h2: var(--roboto-h2);
+    --font-body: var(--roboto-h2);
+
+    --font-display-mobile: var(--roboto-display-m);
+    --ls-display-mobile: var(--roboto-display-m-ls);
+
+    --font-h1-mobile: var(--roboto-h1-m);
+    --ls-h1-mobile: var(--roboto-h1-m-ls);
+
+    --font-h2-mobile: var(--roboto-h2-m);
+  }
+
+  body.font-space {
+    --font-display: var(--space-display);
+    --ls-display: var(--space-display-ls);
+
+    --font-h1: var(--space-h1);
+    --ls-h1: var(--space-h1-ls);
+
+    --font-h2: var(--space-h2);
+    --font-body: var(--space-h2);
+
+    --font-display-mobile: var(--space-display-m);
+    --ls-display-mobile: var(--space-display-m-ls);
+
+    --font-h1-mobile: var(--space-h1-m);
+    --ls-h1-mobile: var(--space-h1-m-ls);
+
+    --font-h2-mobile: var(--space-h2-m);
+  }
+
+  /* --- COLOR THEMES --- */
+  body.theme-cyan {
+    --main-color: var(--cyan-300);
+  }
+  body.theme-purple {
+    --main-color: var(--purple-400);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: var(--blue-850);
+  color: var(--blue-100);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.6rem;
+}
+
+/* --- HEADER PART --- */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.6rem;
+}
+
+.modes-container {
+  display: flex;
+  background-color: var(--blue-900);
+  border-radius: 3.15rem;
+  padding: 0.8rem 1.2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.mode-button {
+  font: var(--font-h2);
+  opacity: 0.4;
+  border-radius: 2.65rem;
+  padding: 1.6rem 2.4rem;
+  transition: all 0.3s ease;
+}
+
+.mode-button:hover {
+  opacity: 1;
+}
+
+.mode-button.active {
+  background-color: var(--main-color);
+  color: var(--blue-850);
+  opacity: 1;
+}
+/* --- HEADER PART --- */
+
+/* --- MAIN PART --- */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.timer-container {
+  position: relative;
+  width: 41rem;
+  height: 41rem;
+  border-radius: 50%;
+  background: linear-gradient(315deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+  box-shadow:
+    -5rem -5rem 10rem #272c5a,
+    5rem 5rem 10rem #121530;
+  padding: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-circle-container {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.timer-circle-bg {
+  fill: var(--blue-900);
+}
+
+.timer-circle-progress {
+  fill: none;
+  stroke: var(--main-color);
+  stroke-width: 1.2rem;
+  stroke-linecap: round;
+
+  /* Çemberin yarıçapı (r) 160. Çevresi = 2 * pi * 150 ≈ 880 */
+  stroke-dasharray: 880;
+  stroke-dashoffset: 200; /* 0 = Tam dolu, 880 = Tam boş */
+  transition: stroke-dashoffset 1s linear;
+}
+
+.timer-info-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  z-index: 5;
+}
+
+.timer-display {
+  font: var(--font-display);
+  letter-spacing: var(--ls-display);
+}
+
+.timer-button {
+  font: var(--font-h1);
+  letter-spacing: var(--ls-h1);
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  margin-right: -1.5rem;
+}
+
+.timer-button:hover {
+  color: var(--main-color);
+}
+
+.settings-button-img-path {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.settings-button:hover .settings-button-img-path {
+  opacity: 1;
+}
+/* --- MAIN PART --- */
+
+/* --- MODAL OVERLAY --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  position: relative;
+  color: var(--blue-900);
+  width: 100%;
+  max-width: 54rem;
+  background-color: var(--white);
+  border-radius: 2.5rem;
+}
+
+.modal-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--grey-200);
+  padding: 3.2rem 3.6rem;
+}
+
+.modal-header {
+  font: var(--settings-header);
+}
+
+.modal-close-img-path {
+  fill: var(--grey-400);
+  transition: all 0.3s ease;
+}
+
+.modal-close-button:hover .modal-close-img-path {
+  fill: var(--blue-850);
+}
+
+.modal-form {
+  padding: 3.2rem 3.6rem 4.8rem 3.6rem;
+}
+
+.time-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.form-title {
+  font: var(--settings-subhead);
+  letter-spacing: var(--settings-subhead-ls);
+  text-transform: uppercase;
+}
+
+.time-element-container {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.time-label {
+  display: block;
+  color: var(--blue-850);
+  font: var(--settings-label);
+  opacity: 40%;
+  margin-bottom: 0.8rem;
+}
+
+.input-container {
+  width: 14rem;
+  background-color: var(--blue-50);
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-input {
+  width: 100%;
+  color: var(--blue-850);
+  font: var(--settings-input);
+  padding-left: 1.6rem;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.time-input::-webkit-outer-spin-button,
+.time-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.arrows-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+
+.arrow-up-button {
+  padding: 1.2rem 1.6rem 0.8rem 1.6rem;
+}
+
+.arrow-down-button {
+  padding: 0.8rem 1.6rem 1.2rem 1.6rem;
+}
+
+.arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.arrow-button:hover .arrow-img-path {
+  stroke: var(--blue-850);
+}
+
+.arrow-img {
+  display: block;
+}
+
+.arrow-img-path {
+  stroke: var(--grey-400);
+  transition: stroke 0.3s ease;
+}
+
+.form-divider {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--blue-900);
+  opacity: 0.1;
+  border: none;
+  margin: 2.4rem 0;
+}
+
+.form-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.radio-container {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.font-input,
+.color-input {
+  display: none;
+}
+
+.radio-label {
+  cursor: pointer;
+  position: relative;
+}
+
+.font-text {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--blue-50);
+  color: rgba(30, 33, 63, 73%);
+  transition: outline-offset 0.2s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-label:hover input:not(:checked) + .font-text {
+  outline: 0.15rem solid var(--blue-50);
+  outline-offset: 0.3rem;
+}
+
+.font-input:checked + .font-text {
+  background-color: var(--blue-900);
+  color: var(--white);
+}
+
+.font-1 {
+  font: var(--settings-aa-kumbh);
+}
+.font-2 {
+  font: var(--settings-aa-roboto);
+}
+.font-3 {
+  font: var(--settings-aa-space);
+}
+
+.color-circle {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: relative;
+  transition: outline-offset 0.2s ease;
+}
+
+.radio-label:hover input:not(:checked) + .color-circle {
+  outline: 0.15rem solid var(--blue-50);
+  outline-offset: 0.3rem;
+}
+
+.color-1 {
+  background-color: var(--red-400);
+}
+.color-2 {
+  background-color: var(--cyan-300);
+}
+.color-3 {
+  background-color: var(--purple-400);
+}
+
+.color-input:checked + .color-circle::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 0.6rem;
+  height: 1.2rem;
+  border-bottom: 0.2rem solid var(--blue-900);
+  border-right: 0.2rem solid var(--blue-900);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.submit-button {
+  width: 14rem;
+  height: 5.3rem;
+  background-color: var(--main-color);
+  color: var(--white);
+  font: var(--settings-btn);
+  border-radius: 2.65rem;
+
+  position: absolute;
+  bottom: -2.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: color-mix(in srgb, var(--main-color), white 40%);
+}
+/* --- MODAL OVERLAY --- */
+
+/* --- EXTRA CLASSES --- */
+.hidden {
+  display: none;
+}
+/* --- EXTRA CLASSES --- */
+
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+/* Tablet = 768px = 48em */
+/* Mobile = 384px = 24em */
+
+/******************************************/
+/* BELOW 768px (Tablet) */
+/******************************************/
+/* Desktop layout applies to tablet screens. */
+
+/******************************************/
+/* BELOW 384px (Mobile) */
+/******************************************/
+@media (max-width: 24em) {
+  /* --- HEADER PART --- */
+  .header-container {
+    gap: 4rem;
+  }
+
+  .modes-container {
+    padding: 0.8rem;
+  }
+
+  .mode-button {
+    font: var(--font-h2-mobile);
+  }
+  /* --- HEADER PART --- */
+
+  /* --- MAIN PART --- */
+  .timer-container {
+    width: 30rem;
+    height: 30rem;
+    padding: 0.8rem;
+  }
+
+  .timer-display {
+    font: var(--font-display-mobile);
+    letter-spacing: var(--ls-display-mobile);
+  }
+
+  .timer-button {
+    font: var(--font-h1-mobile);
+    letter-spacing: var(--ls-h1-mobile);
+    margin-right: -1.3rem;
+  }
+  /* --- MAIN PART --- */
+
+  /* --- MODAL OVERLAY --- */
+  .modal-container {
+    max-width: 32.7rem;
+    border-radius: 1.5rem;
+  }
+
+  .modal-header-container {
+    padding: 1.6rem 2.4rem;
+  }
+
+  .modal-form {
+    padding: 1.6rem 2.4rem 6.4rem 2.4rem;
+  }
+
+  .time-section-container {
+    align-items: center;
+  }
+
+  .form-title {
+    font: var(--settings-label);
+    letter-spacing: normal;
+  }
+
+  .time-element-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .time-element {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .time-label {
+    margin-bottom: 0;
+  }
+
+  .form-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+  }
+  /* --- MODAL OVERLAY --- */
+}
